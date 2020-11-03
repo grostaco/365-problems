@@ -3,12 +3,13 @@
  * randomly move to adjacent cells. If every cell adjacent to the current cell 
  * are all occupied, exit. If not, leave 'A' in the cell that was left and move
  * to an unoccupied cell repeat until 'Z'. An unoccupied cell will be signified by
- * a '.', an occupied cell will have an alphabet.
+ * a '.', an occupied cell will have an alphabet. 
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 static unsigned abs_table[] = {9, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0,
                                1, 2, 3, 4, 5, 6, 7, 8, 9, 9};
@@ -25,7 +26,7 @@ int main() {
   char c = 'A';
 
   char *grid = (char[10 * 10]){[0 ... 99] = '.'};
-  srand48(242);
+  srand48(time(NULL));
 
   while (c <= 'Z' && (grid[absolute_pos(x, y, 0, 0)] = c++) &&
          (grid[absolute_pos(x, y, 1, 0)] == '.' ||
