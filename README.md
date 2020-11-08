@@ -4,6 +4,8 @@ This is a repository comprising of multiple programming solutions to problems I 
 They will be written in C, compiled with GCC. The use of extensions will be used to their fullest extent. 
 
 The goal of this repository is for anyone coming to check it out will learn something new.
+The repository will not receive further file additions once it has reached the 365 files milestone (exception being mistakes in existing problems once notified).
+It is planned to be updated on a daily basis.
 
 ## Solutions
 ### Solution 1 - AZPath.c
