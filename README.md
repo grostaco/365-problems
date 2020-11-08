@@ -17,7 +17,7 @@ a '.', an occupied cell will have an alphabet.
 For a sequence of single digits, a mapping exists for 1->'a', 2->'b', ...,
 26->'z'. Map such a sequence into its string counterparts. In a case that two
 possible interpretations exist, for example, 12 can both be 'ab' and 'l',
-present both as an answer. If, however, it cannot be represented such as 39, 42,
+present both as an answer. If, however, it cannot be represented, such as 39, 42,
 86, that interpreted mapping shall not exist and be given as an answer.
 
 ### Solution 3 - CompSort.c
